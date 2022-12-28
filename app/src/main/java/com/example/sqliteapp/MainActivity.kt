@@ -57,7 +57,7 @@ class MainActivity : AppCompatActivity() {
 
         cursor!!.moveToFirst()
         var fcolindex = cursor.getColumnIndex(DBHelper.NAME_COl)
-        var scolindex = cursor.getColumnIndex(DBHelper.NAME_COl)
+        var scolindex = cursor.getColumnIndex(DBHelper.AGE_COL)
         txtName.append(cursor.getString(fcolindex) + "\n")
         txtAge.append(cursor.getString(scolindex) + "\n")
 
